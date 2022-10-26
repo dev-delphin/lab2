@@ -11,4 +11,17 @@ public class Euro extends Currency{
 	public void euro_revert() {
 		System.out.println(super.getDollar());
 	}
+	
+	public static double EuroToDollar() {
+		return Currency.getEuro()/Currency.getEuroToDollar();
+	}
+	
+	public static double EuroToRuble() {
+		return Currency.getEuro()*Currency.getEuroToRubles();
+	}
+	
+	public static double RubleToEuro() {
+		return Currency.getRubles()/Currency.getEuroToRubles();
+	}
+	
 }
